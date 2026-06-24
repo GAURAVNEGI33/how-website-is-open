@@ -12,6 +12,7 @@ My browser only knows the name, not the IP, so it asks DNS to find the real addr
 
 <img width="200" height="230" alt="Screenshot 2026-06-24 210011" src="https://github.com/user-attachments/assets/7dfafc29-c83b-4f06-866b-3334b75ea92d" />
 
+
 **2. TCP Handshake**
 The browser connects to that IP using TCP — a quick back-and-forth to confirm both sides are ready before sending any real data./>
 
@@ -19,21 +20,29 @@ The browser connects to that IP using TCP — a quick back-and-forth to confirm 
 <img width="200" height="230" alt="Screenshot 2026-06-24 212353" src="https://github.com/user-attachments/assets/2d67979e-c8be-4e7d-aa30-f1a975800f1b" />
 
 
+
 **3. TLS Handshake**
 Since it's HTTPS, the browser and server also agree on encryption here, so the connection stays secure. That's the lock icon next to the URL.
 
 
-<img width="200" height="230" alt="Screenshot 2026-06-24 210606" src="https://github.com/user-attachments/assets/41fb595f-dc41-417f-9a01-ca12226f77e9" />
+<img width="200" height="300" alt="Screenshot 2026-06-24 210606" src="https://github.com/user-attachments/assets/41fb595f-dc41-417f-9a01-ca12226f77e9" />
+
 
 
 **4. HTTP Request**
 The browser sends a GET request asking for the homepage. I saw this in DevTools as `GET https://shorterloop.com/`.
 
+
+
 **5. Server Response**
 The server replies with the HTML and a status code. I mostly saw `200 OK`, plus one `304 Not Modified` meaning it was already cached.
 
+
+
 **6. Fetching More Files**
 While reading the HTML, the browser spots links to CSS/JS files and sends separate requests for each — that's why I saw `testimonials.css`, `common.js`, etc. in the Network tab.
+
+
 
 **7. Rendering**
 The browser builds the page structure, applies styles, figures out layout, and paints everything on screen.
