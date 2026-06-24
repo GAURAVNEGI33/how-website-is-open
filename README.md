@@ -1,6 +1,7 @@
 #   How a Website Loads (shorterloop.com)
 
-## How a Website Loads — Step by Step
+## Ever wonder what actually happens when you open a website?
+## Typing a URL feels instant but it's not — here's everything that actually happens behind the scenes.
 
 **1. DNS Lookup**
 My browser only knows the name, not the IP, so it asks DNS to find the real address. I checked this with `nslookup shorterloop.com` and got `199.36.158.100`.
