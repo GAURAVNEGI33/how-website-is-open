@@ -1,6 +1,6 @@
 
 
-<img width="513" height="613" alt="Screenshot 2026-06-24 210011" src="https://github.com/user-attachments/assets/7dfafc29-c83b-4f06-866b-3334b75ea92d" />
+
 #   How a Website Loads (shorterloop.com)
 
 ## Ever wonder what actually happens when you open a website?
@@ -8,16 +8,21 @@
 
 **1. DNS Lookup**
 My browser only knows the name, not the IP, so it asks DNS to find the real address. I checked this with `nslookup shorterloop.com` and got `199.36.158.100`.
-<img width="513" height="613" alt="Screenshot 2026-06-24 210011" src="https://github.com/user-attachments/assets/7dfafc29-c83b-4f06-866b-3334b75ea92d" />
+
+
+<img width="150" height="230" alt="Screenshot 2026-06-24 210011" src="https://github.com/user-attachments/assets/7dfafc29-c83b-4f06-866b-3334b75ea92d" />
 
 **2. TCP Handshake**
 The browser connects to that IP using TCP — a quick back-and-forth to confirm both sides are ready before sending any real data./>
-<img width="802" height="482" alt="Screenshot 2026-06-24 210928" src="https://github.com/user-attachments/assets/b7f14429-6378-41ac-a765-f116c1e7acfe" />
+
+
+<img width="150" height="230" alt="Screenshot 2026-06-24 210928" src="https://github.com/user-attachments/assets/b7f14429-6378-41ac-a765-f116c1e7acfe" />
 
 **3. TLS Handshake**
 Since it's HTTPS, the browser and server also agree on encryption here, so the connection stays secure. That's the lock icon next to the URL.
 
-<img width="413" height="582" alt="Screenshot 2026-06-24 210606" src="https://github.com/user-attachments/assets/41fb595f-dc41-417f-9a01-ca12226f77e9" />
+
+<img width="120" height="230" alt="Screenshot 2026-06-24 210606" src="https://github.com/user-attachments/assets/41fb595f-dc41-417f-9a01-ca12226f77e9" />
 **4. HTTP Request**
 The browser sends a GET request asking for the homepage. I saw this in DevTools as `GET https://shorterloop.com/`.
 
