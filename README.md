@@ -1,7 +1,6 @@
-# Day 2 Task — DNS & Network Tab
-
 ## nslookup Output
 
+```
 Command: nslookup shorterloop.com
 
 Server: UnKnown
@@ -14,3 +13,4 @@ Addresses: 64:ff9b::c724:9e64
 
 Command: dig shorterloop.com +short
 (dig not available on Windows CMD)
+```
