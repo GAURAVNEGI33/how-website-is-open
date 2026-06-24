@@ -1,4 +1,4 @@
-# Day 2 Task — How a Website Loads (shorterloop.com)
+#   How a Website Loads (shorterloop.com)
 
 ## How a Website Loads — Step by Step
 
